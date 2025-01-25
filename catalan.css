@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(to right, #89f7fe, #66a6ff); /* Gradient Background */
+}
+
+/* Header Styles */
+/* Header Styles */
+header {
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Make it span the full width */
+  background: #003366; /* Dark Blue */
+  color: #fff;
+  padding: 1rem 0;
+  z-index: 1000; /* Ensure it appears above other elements */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth color change */
+}
+
+nav ul li a:hover {
+  color: #ffcc00; /* Gold hover effect */
+}
+
+/* Full-Screen Intro Section */
+#intro {
+  padding-top: 5rem; /* Adjust padding to account for the fixed header height */
+  background: linear-gradient(to bottom, #66a6ff, #89f7fe); /* Gradient for intro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add text shadow */
+}
+
+.intro-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.intro-content p {
+  font-size: 1.2rem;
+}
+
+/* About Section */
+#about {
+  padding: 2rem;
+  background:salmon; /* White background */
+  text-align: center;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Add a soft shadow inside */
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  margin-right: 1rem;
+  max-width: 250px;
+  border: 4px solid #66a6ff; /* Blue border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the image */
+}
+
+/* Projects Section */
+#projects {
+  padding: 2rem;
+  background: #f4f9ff; /* Light blue */
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  margin: 1rem;
+  text-align: center;
+  background: #ea86c297;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+#contact {
+  padding: 2rem;
+  background: #003366;
+  color: #fff;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea,
+form button {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+form input,
+form textarea {
+  background: #ab9caa; /* Light blue for inputs */
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form button {
+  background: #ffcc00; /* Gold button */
+  color: #003366;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #e6b800; /* Darker gold hover effect */
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  background: gray;
+  color: #fff;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 0.5rem;
+}
+
+footer ul li a {
+  color: #ffcc00; /* Gold links */
+}
+
+footer ul li a:hover {
+  color: #e6b800;
+}
